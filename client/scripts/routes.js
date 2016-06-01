@@ -52,6 +52,15 @@ class RoutesConfig extends Config { //adding on to base config with some custom 
 			resolve: {
 				user: this.isAuthorized
 			}
+		})
+		.state('tab.settings', {
+			url: '/settings',
+			views: {
+				'tab.settings': {
+					templateUrl: 'client/templates/settings.html',
+					controller: 'SettingsCtrl as settings',
+				}
+			}
 		});
 
 		this.$urlRouterProvider.otherwise('tab/chats'); //error alt route???

@@ -1,0 +1,20 @@
+<ion-view title="profile">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear button-positive" ng-click="profile.updateName()" ng-disabled="!profile.name || profile.name.length === 0">Done</button>
+	</ion-nav-buttons>
+	<ion-content class="profile">
+		<a class="profile-picture positive">
+			<div class="upload-placeholder">
+				Add photo
+			</div>
+		</a>
+		<div class="instructions">
+			Enter your name and add an optional profile picture
+		</div>
+		<div class="list profile-name">
+			<label class="item item-input">
+				<input type="text" placeholder="Your name" ng-model="profile.name" on-return="profile.updateName()">
+			</label>
+		</div>
+	</ion-content>
+</ion-view>
