@@ -6,7 +6,7 @@ import { Controller } from 'angular-ecmascript/module-helpers';
 import { Chats } from '../../../lib/collections';
 
 export default class ChatsCtrl extends Controller {
-	contructor() {
+	constructor() {
 		super(...arguments);
 
 		this.helpers({ //this is used in the same way as $scope

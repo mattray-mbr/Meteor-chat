@@ -1,0 +1,8 @@
+//created for debugging purposes, these codes will always pass the verification stage
+
+{
+	"ACCOUNTS_PHONE": {
+		"ADMIN_NUMBERS": ["123456789", "987654321"],
+		"MASTER_CODE": "1234"
+	}
+}
